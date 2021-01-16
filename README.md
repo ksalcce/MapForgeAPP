@@ -2,7 +2,7 @@ MapForge
 
 Live link: https://mapforge.vercel.app/
 
-API repo: https://github.com/greynagle/mapforge-api
+API repo: https://github.com/ksalcce/mapforge-api
 
 Sample login
 Username: naglegrey
