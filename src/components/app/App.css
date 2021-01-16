@@ -1,0 +1,419 @@
+* {
+    text-align: center;
+    box-sizing: border-box;
+    font-family: "Cormorant SC";
+}
+
+@font-face {
+    font-family: "Cormorant SC";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.googleapis.com/css?family=Cormorant SC")
+        format("woff");
+}
+
+.html {
+    background-color: #f8f5f0;
+}
+
+.App_header {
+    /* position: absolute; */
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 0.3vh;
+    background: #fff;
+    box-shadow: 0 1px 6px 1px rgba(32, 33, 36, 0.28);
+}
+
+.landing {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.sub-header {
+    padding-top: 2vh;
+}
+
+h1 {
+    margin-bottom: 2vh;
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+.tree-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #4caf50;
+    cursor: pointer;
+}
+
+.city-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #d2b48c;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4caf50;
+    cursor: pointer;
+}
+
+div.sliderSet {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+span.sliderBox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 190px;
+}
+
+span.fix {
+    width: 50px;
+}
+
+span.fix > label {
+    margin-left: 0px;
+}
+
+span.sliderBox > label {
+    width: 36px;
+    margin-left: 0%;
+    text-align: right;
+}
+
+header > h1 > a {
+    text-decoration-line: none;
+}
+
+.account-link a {
+    color: #000000;
+}
+
+td > a {
+    color: #c29b9b;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+.header {
+    background-color: #222233;
+    color: #aaccff;
+    height: 100vh;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+/* label {
+    margin-left: 5vw;
+} */
+
+.red {
+    background-color: #ca1551;
+    color: white;
+}
+
+li.account-link {
+	width:250px;
+	margin-left:auto;
+	margin-right:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+li.account-link > a {
+    width: 50px;
+}
+
+li.account-link > button.btn {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 30px;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.new-inputs {
+    margin-right: 10px;
+    width: 4rem;
+    height: 20px;
+}
+
+.info {
+    text-align: left;
+    display: block;
+    margin-top: 0vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
+
+.Button__Array {
+    float: right;
+    margin-right: 10px;
+}
+
+.instructions {
+    clear: right;
+}
+
+.top-link-list {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.top-link {
+    text-align: center;
+    display: inline-block;
+    width: 37vw;
+    margin-top: 0px;
+}
+
+.account-link {
+    text-align: center;
+    display: block;
+    width: 37vw;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* button yoink */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #3e3f3a;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    margin: 0.3rem 0.3rem 0rem 0.3rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out,
+        background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+        -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #8e8c84;
+    border-color: #8e8c84;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #7b7971;
+    border-color: #74726b;
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+    color: #fff;
+    background-color: #7b7971;
+    border-color: #74726b;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(159, 157, 150, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(159, 157, 150, 0.5);
+}
+
+/* tabbing */
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/* end tabbing */
+
+/* popup on successful reply */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    /* bottom: 125%; */
+    left: -40%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 75%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    border-color: #555 transparent transparent transparent;
+}
+
+@media only screen and (min-width: 768px) {
+    .prt_form > div > label {
+        margin-left: 20vw;
+    }
+
+    /* .new-inputs {
+        margin-right: 20vw;
+        max-width: 350px;
+    } */
+
+    .Button__Array {
+        margin-right: 20vw;
+    }
+
+    div.sub-header > ul {
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+
+    div.sliderSet {
+        width:450px;
+		margin-left:auto;
+		margin-right:auto;
+		display: flex;
+        justify-content: space-evenly;
+    }
+
+    span.sliderBox {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 190px;
+    }
+
+    span.info {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+
+	.Input{
+		width:400px;
+	}
+
+    div.nav_link > ul {
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+
+    p.landing {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5vh;
+    }
+
+    p.info {
+		width:500px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .prt_form > div > label {
+        margin-left: 30vw;
+    }
+
+    .routing_form > div > label {
+        margin-left: 30vw;
+    }
+
+    .machine_form > div > label {
+        margin-left: 30vw;
+    }
+
+    .asm_form > div > label {
+        margin-left: 30vw;
+    }
+}
